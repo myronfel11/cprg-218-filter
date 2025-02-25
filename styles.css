@@ -1,0 +1,122 @@
+/* [x] A font stack that includes at least one embedded font, used to style content on the page. */
+body {
+  font-family: "Merriweather", Arial, sans-serif;
+  background-color: #f0e68c;
+  color: #8b4513;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8b4513;
+  color: #ffd700;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  background-color: #ffd700;
+  color: #8b4513;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+nav button.selected {
+  background-color: #ff4500;
+  color: white;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.game {
+  background: #6a5acd;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.game:hover {
+  transform: scale(1.05);
+}
+
+.game img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #ffd700;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  color: #ffd700;
+}
+
+.video-title-bkgrnd {
+  background-color: #8b4513;
+  padding: 1%;
+}
+
+.video {
+  margin: 40px auto;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #8b4513;
+  color: #ff4500;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .games-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+
+  header {
+    font-size: 1em;
+  }
+}
+
+.hidden {
+  display: none;
+}
